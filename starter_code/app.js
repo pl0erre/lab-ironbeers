@@ -11,18 +11,33 @@ app.set('view engine', 'hbs');
 app.set('views', __dirname + '/views');
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
 app.get('/', (req, res, next) => {
-  res.render('index');
+  res.render('home');
 });
 
-app.get('/about', (req, res, next) => {
-  res.render('about');
+app.get('/beers', (req, res, next) => {
+
+  punkAPI.getBeers()
+
+    .then((beers) => {
+      console.log(beers)
+      res.render('beers', {beers: beers});
+    })  
+    .catch(error => {
+      console.log(error)
+    })
+
 });
 
-app.get('/contact', (req, res, next) => {
-  res.render('contact');
+app.get('/randombeer', (req, res, next) => {
+
+  punkAPI.getRandom()
+    .then((beers) => {
+      res.render('randombeer', {beers: beers});
+    })
+    .catch(error => {
+    console.log(error)
+    })
 });
 
 
