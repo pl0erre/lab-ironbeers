@@ -89,6 +89,68 @@ a {
 .beer-container p {
   text-align: left;
 }
+
+.beer-container-random {
+  display: flex;
+
+  width: 1000px;
+  height: 600px;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  background-color: rgba(231, 231, 201, 0.596);
+  border: 3px solid rgba(59, 59, 59, 0.486);
+  margin: 5px;
+  border-radius: 10px;
+  color: rgb(21, 21, 53)
+
+
+}
+
+.about-container {
+  width: 600px;
+  margin-top: 30px;
+}
+
+.about-container ul {
+  padding: 0 50px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.about-container li {
+  font-size: 1rem;
+  padding: 2px;
+}
+
+
+.beer-container-random img {
+  height: 400px;
+  margin: 100px 50px;
+}
+
+.beer-container-random h3 {
+  font-size: 1.6rem;
+  padding: 15px;
+}
+
+.beer-container-random h4 {
+  font-size: 1.4rem;
+  color: rgb(109, 109, 109);
+}
+
+.beer-container-random h5 {
+  font-size: 1.2rem;
+  margin: 7px;
+  padding-bottom: 2px;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+.beer-container-random p {
+  font-size: 1rem;
+  color: rgb(21, 21, 53)
+}
+
 main a {
   -webkit-appearance: button;
     -moz-appearance: button;
